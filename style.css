@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0a0a0a;
+    color: #00ff00;
+    font-family: 'Courier New', monospace;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#password-screen {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-shadow: 0 0 10px #00ff00;
+}
+
+p {
+    margin-bottom: 1rem;
+    line-height: 1.6;
+}
+
+input {
+    background: transparent;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    padding: 0.5rem 1rem;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    margin: 1rem 0;
+    width: 300px;
+}
+
+button {
+    background: transparent;
+    border: 1px solid #00ff00;
+    color: #00ff00;
+    padding: 0.5rem 2rem;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-left: 1rem;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: #00ff00;
+    color: #0a0a0a;
+}
+
+#error-message {
+    color: #ff0000;
+    height: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+#message-screen {
+    text-align: left;
+}
+
+.typewriter p {
+    overflow: hidden;
+    border-right: 2px solid #00ff00;
+    white-space: nowrap;
+    margin: 0;
+    animation: typing 3s steps(40, end), blink-caret 0.75s step-end infinite;
+}
+
+.typewriter p:nth-child(2) { animation-delay: 0.5s; }
+.typewriter p:nth-child(3) { animation-delay: 4s; }
+.typewriter p:nth-child(4) { animation-delay: 8s; }
+.typewriter p:nth-child(5) { animation-delay: 12s; }
+.typewriter p:nth-child(6) { animation-delay: 16s; }
+.typewriter p:nth-child(7) { animation-delay: 20s; }
+.typewriter p:nth-child(8) { animation-delay: 24s; }
+.typewriter p:nth-child(9) { animation-delay: 28s; }
+.typewriter p:nth-child(10) { animation-delay: 32s; }
+.typewriter p:nth-child(11) { animation-delay: 36s; }
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: #00ff00; }
+}
+
+.signature {
+    margin-top: 2rem !important;
+    font-style: italic;
+    text-align: right;
+}
+
+strong {
+    color: #ffff00;
+}
