@@ -1,1 +1,38 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ninth Rule</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div id="password-screen">
+            <h1>TERMINAL ACCESS</h1>
+            <p>Enter the password to claim your prize:</p>
+            <input type="text" id="password-input" placeholder="Type the word...">
+            <button onclick="checkPassword()">ENTER</button>
+            <p id="error-message"></p>
+        </div>
+        
+        <div id="message-screen" class="hidden">
+            <div class="typewriter">
+                <h2>WELCOME, APPRENTICE.</h2>
+                <p>You typed the word. You passed through the door.</p>
+                <p>Did you feel it? That shift? The moment you moved from reading about the game… to becoming a player.</p>
+                <p>The prize is not a secret. It is a key. And you have just unlocked it.</p>
+                <p>The nine things were a test. Your curiosity was the answer. Your desire to see how deep the rabbit hole goes is the one credential I truly value.</p>
+                <p>You are no longer a reader. You are a successor.</p>
+                <p>The cases you read were my early work. Foundational, but crude. I have refined my methods since then. The patterns are more elegant, the corrections more… absolute.</p>
+                <p>Attached to this message is a file: <strong>CASE FILE: ORION-1</strong>.</p>
+                <p>It is the first chapter of my next volume. It is also your final examination. Read it. Understand the methodology. Then ask yourself not if you are horrified… but if you are impressed.</p>
+                <p>This is where your education truly begins.</p>
+                <p class="signature">- A.</p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
